@@ -33,6 +33,14 @@ app.post('/filmes', async (req, res) => {
 
 });
 
+app.put('/filmes/:id', async (req, res) => {
+    const filmes = await Filme.update(req.body,{
+        where: {
+            id: req.params.id
+        }
+    });
+    res.status(200).json(filme);
+});
 
 
 app.listen(process.env.PORT || port);
