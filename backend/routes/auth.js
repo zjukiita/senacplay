@@ -1,16 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const { User } = require('../models');
+const { Users } = require('../models');
 const sha256 = require('js-sha256');
 const jwt = require ('jsonwebtoken')
 
 router.post('/', async (req, res) => {
-    const result = await User.findAll({
+    const result = await Users.findAll({
         where: {
-            userName: req.body.userName,
-            password: sha256(req.body.password+767)
+            nomeCompleto: req.body.nomeCompleto,
+            senha: sha256(req.body.senha+"767")
         }
     });
+
     if(!result.length){
         res.status(403).json({ auth:false });
     }
