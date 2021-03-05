@@ -9,6 +9,7 @@ const filmesRouter = require('./routes/filmes');
 
 app.use(bodyParser.json());
 
+
 app.use('/', indexRouter);
 app.use('/users', userRouter);
 app.use('/login', authRouter);
