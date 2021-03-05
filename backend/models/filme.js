@@ -21,9 +21,9 @@ module.exports = (sequelize, DataTypes) => {
     link: DataTypes.STRING,
     trailer: DataTypes.STRING,
     avaliacao: DataTypes.FLOAT,
-    categoria: DataTypes.STRING,
-    classificacao: DataTypes.STRING,
     anoDeLancamento: DataTypes.INTEGER,
+    categoria: DataTypes.STRING,
+    classificacao: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Filme',

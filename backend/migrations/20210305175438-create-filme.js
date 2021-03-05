@@ -29,6 +29,9 @@ module.exports = {
       avaliacao: {
         type: Sequelize.FLOAT
       },
+      anoDeLancamento: {
+        type: Sequelize.INTEGER
+      },
       categoria: {
         type: Sequelize.STRING
       },
