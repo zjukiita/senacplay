@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     if (!result.length) {
         res.status(403).json({ auth: false });
     }
-    const token = jwt.sign({ id: result.id }, 'play', { expiresIn: 1 });
+    const token = jwt.sign({ id: result.id }, 'play', { expiresIn: 600 });
 
     res.status(200).json({ auth: true, token: token });
 

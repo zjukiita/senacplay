@@ -1,19 +1,19 @@
 const jwt = require('jsonwebtoken');
 
-const verifyINT = (req, res, next) => {
+const verifyJWT = (req, res, next) => {
     const token = req.headers['x-access-token'];
     if (!token) {
         return res.status(403).json({
             auth: false,
-            message: 'token not found'
+            message: 'Token Não Encontrado'
         });
     }
 
-    jwt.verify(token, '@ti35', (err, decoded) => {
+    jwt.verify(token, 'play', (err, decoded) => {
         if (err) {
             return res.status(300).json({
                 auth: false,
-                message: "failed to auth"
+                message: "Falha Ao Autenticar"
             });
         }
         req.userid = decoded.id
@@ -21,4 +21,4 @@ const verifyINT = (req, res, next) => {
     });
 }
 
-module.exports = verifyINT;
+module.exports = verifyJWT;
