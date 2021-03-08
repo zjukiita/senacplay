@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+ul {
+    list-style: none;
+}
+
+/*.imgLogo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}*/
+
+.searchPage {
+    position: absolute;
+    top: 50px;
+    right: 8%;
+}
+
+.pageFilmsList {
+    background-color: black;
+    padding: 15%;
+}
+
+.bars {
+    /*position: absolute;
+    top: 42px;
+    right: 35px;*/
+    color: grey;
+    
+}
+
