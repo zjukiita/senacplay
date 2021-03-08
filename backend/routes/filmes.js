@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const filmes = await Filme.findAll({
-    where: {
+        where: {
             id: req.params.id
         }
     });

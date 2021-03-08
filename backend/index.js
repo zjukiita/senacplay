@@ -3,12 +3,11 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const indexRouter = require('./routes/index');
-const userRouter = require ('./routes/user');
-const authRouter = require ('./routes/auth');
+const userRouter = require('./routes/user');
+const authRouter = require('./routes/auth');
 const filmesRouter = require('./routes/filmes');
 
 app.use(bodyParser.json());
-
 
 app.use('/', indexRouter);
 app.use('/users', userRouter);
