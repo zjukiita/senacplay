@@ -16,6 +16,15 @@ router.get('/:id', async (req, res) => {
     res.status(200).json(filmes)
 });
 
+router.get('/nome/:nome', async (req, res) => {
+    const filmes = await Filme.findAll({
+         where: {
+             nome: req.params.nome
+         }
+    });
+    res.status(200).json(filmes);
+});
+
 router.post('/', async (req, res) => {
     const filmes = await Filme.create(req.body)
     res.status(201).json(filmes)
