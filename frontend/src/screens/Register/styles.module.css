@@ -35,7 +35,8 @@
     
   }
 
-  label {
+
+  #name {
     color: white;
   }
 
@@ -54,9 +55,9 @@
     box-sizing: border-box;
   }
 
-  /*.name, .email, .user, .password {
-  background-color: grey;
-  }*/
+  .name label, .email label, .user label , .password label {
+    color: white;
+  }
 
   .email [type=text], select {
     width: 100%;

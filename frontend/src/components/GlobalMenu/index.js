@@ -9,7 +9,7 @@ function GlobalMenu() {
             <Link to="/">Página Principal</Link>
             <Link to="/filmsList">Lista de Filmes</Link>
             <Link to="/register">Cadastro</Link>
-            {/*<Link to="/login">Login</Link>*/}
+            <Link to="/Login">Login</Link>
         </nav>
     );
 }

@@ -7,6 +7,7 @@ import imgLogo from '../../img/exampleImg.jpg'
 
 const FilmsList = () => {
     const [movies, setMovies] = useState([]);
+    const [search, setSearch] = useState('');
 
     const loadingMovies = async () => {
         const response = await api.get(`/filmes`); //Chave de busca da API
@@ -22,7 +23,7 @@ const FilmsList = () => {
     return (
         <>
             <h1>Lista de Filmes</h1>
-            {/* <div>
+             <div>
                 <label htmlFor="search">Pesquisar:</label>
                 <input
                     id="search"
@@ -31,7 +32,7 @@ const FilmsList = () => {
                     value={search}
                     onChange={(e) => { setSearch(e.target.value) }}
                 />
-            </div> */}
+            </div>
             <ul>
                 {movies.map(m => {
                     return (

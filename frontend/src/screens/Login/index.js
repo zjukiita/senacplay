@@ -1,9 +1,10 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import classes from './login.module.css';
+import GlobalMenu from '../../components/GlobalMenu';
 import * as Yup from 'yup';
-
-
+import { Link } from 'react-router-dom';
+import api from '../../services/api';
 
 
 const Login = () => {
@@ -16,7 +17,6 @@ const Login = () => {
 
     }
 
-
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -28,13 +28,27 @@ const Login = () => {
             senha: Yup.string().required('Obrigatório'),
         }),
 
-        onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2));
+        onSubmit: async (values) => {
+            try {
+                const login = {
+                    email: values.email,
+                    senha: values.senha
+                };
+                const response = await api.post('/login', login);
+                if (response.data) {
+                    alert(`Login efetuado com sucesso`)
+                }
+
+                
+            } catch (error) {
+                alert(`Ocorreu uma falha durante o Login. Tente novamente! ${error}`);
+            }
         }
     });
 
     return (
         <>
+
             <body className={classes.body}>
             <main className={classes.main}>
                 <h2 className={classes.h2}>Login</h2>
