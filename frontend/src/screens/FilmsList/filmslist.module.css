@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+ul {
+    list-style: none;
+}
+
+.searchPage {
+    position: absolute;
+    top: 50px;
+    right: 8%;
+}
+
+.bars {
+    color: grey; 
+}
+

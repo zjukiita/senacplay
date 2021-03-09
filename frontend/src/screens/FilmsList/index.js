@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import GlobalMenu from '../../components/GlobalMenu';
 import MovieCard from '../../components/MovieCard';
 import api from '../../services/api';
-import classes from './styles.module.css'
-
+import classes from './filmslist.module.css'
 
 const FilmsList = () => {
     const [movies, setMovies] = useState([]);
