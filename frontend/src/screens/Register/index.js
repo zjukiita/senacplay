@@ -50,7 +50,7 @@ const Register = () => {
             </nav>
             <div className={classes.totalPage}>
                 <div className={classes.page}>
-                    <h1 className={classes.title}>Cadrasto</h1>
+                    <h1 className={classes.title}>Cadastro</h1>
                     <form onSubmit={formik.handleSubmit}>
                         <div className={classes.registerPage}>
                             <div className={classes.name}>
