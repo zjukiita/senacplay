@@ -4,6 +4,7 @@ import GlobalMenu from '../../components/GlobalMenu'
 import * as Yup from 'yup';
 import classes from './styles.module.css';
 import { Link } from 'react-router-dom';
+import api from '../../services/api'
 
 const Register = () => {
     const formik = useFormik({
@@ -21,8 +22,22 @@ const Register = () => {
                 "Senha Fraca").required(' Obrigatório'),
         }),
 
-        onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2));
+        onSubmit: async (values) => {
+            try {
+                const user = {
+                    email: values.email,
+                    senha: values.password,
+                    nomeCompleto: values.name,
+                    usuario: values.user,
+                };
+                const response = await api.post('/users', user);
+                if (response.data) {
+                    alert(`Cadastro realizado com sucesso!`);
+                }
+
+            } catch (error) {
+                alert(`Ocorreu uma falha durante o cadastro. Tente novamente! ${error}`);
+            }
         }
     });
 
