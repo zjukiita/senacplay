@@ -63,7 +63,7 @@ const Register = () => {
                                 id="name"
                                 name="name"
                                 type="text"
-                                placeholder="Seu nome"
+                                placeholder="Nome"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.name}
