@@ -7,59 +7,41 @@ import imgLogo from '../../img/exampleImg.jpg'
 
 const FilmsList = () => {
     const [movies, setMovies] = useState([]);
-    const [search, setSearch] = useState('');
 
     const loadingMovies = async () => {
         const response = await api.get(`/filmes`); //Chave de busca da API
         setMovies([]);
-        if (response.data.Search)
-            setMovies(response['data'].Search);
+        if (response.data)
+            setMovies(response.data);
     }
 
     useEffect(() => {
         loadingMovies();
-    }, [search]);
+    }, []);
 
     return (
         <>
-            <GlobalMenu />
-            <div style={{display: 'flex', justifyContent: 'space-between', paddingInline: 20, alignItems: 'center'}}>
-                <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
-                <div>
-                    <input
-                        id="search"
-                        name="search"
-                        type="text"
-                        placeholder="Pesquisa"
-                        value={search}
-                        onChange={(e) => { setSearch(e.target.value) }}
-                    />
-                </div>
-                <div className={classes.bars}>
-                    <i class="fas fa-bars fa-3x"></i>
-                </div>
-            </div>
-
-            <div className={classes.pageFilmsList}>
-                <div class="container-fluid" className={classes.searchPage}>
-                    <div className={classes.listFilms}>
-                        <ul>
-                            {movies.map(m => {
-                                return (
-                                    <li key={m.imdbID}>
-                                        <MovieCard
-                                            cover={m.Poster}
-                                            title={m.Title}
-                                            release={m.Year}
-                                            type={m.Type}
-                                        />
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <h1>Lista de Filmes</h1>
+            {/* <div>
+                <label htmlFor="search">Pesquisar:</label>
+                <input
+                    id="search"
+                    name="search"
+                    type="text"
+                    value={search}
+                    onChange={(e) => { setSearch(e.target.value) }}
+                />
+            </div> */}
+            <ul>
+                {movies.map(m => {
+                    return (
+                        <li key={m.id}>
+                            <MovieCard movie={m}
+                            />
+                        </li>
+                    );
+                })}
+            </ul>
         </>
     );
 }
