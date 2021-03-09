@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { Filme } = require('../models');
+const { Op } = require("sequelize");
 
 router.get('/', async (req, res) => {
     const filmes = await Filme.findAll();
@@ -19,8 +20,12 @@ router.get('/:id', async (req, res) => {
 router.get('/nome/:nome', async (req, res) => {
     const filmes = await Filme.findAll({
          where: {
-             nome: req.params.nome
-         }
+            nome: {
+             [Op.like]: `${req.params.nome}%`
+            }
+        }
+      
+         
     });
     res.status(200).json(filmes);
 });

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
+    background: url(../../img/cinema-4213751_1920.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main {
+    background: #363636;
+    width: 500px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+ .h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    color: #7600a9;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fieldInput {
+    font-size: 1rem;
+    padding: 2px;
+    width: 100%;
+    outline: none;
+
+}
+
+.form input  {
+    background-color: #363636;
+    border: 3px;
+    border-color: white;
+    color: white;
+}
+
+.input-field input::placeholder {
+    color: white;
+}
+
+.form label {
+    color: white;
+
+}
+
+.form .inputSubmit {
+    margin-top: 0.1rem;
+    padding: 0.4rem;
+    background: #7600a9;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+/*.span {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .socialFields {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+ .socialFields .socialFieldFacebook a,
+ .socialFieldTwitter .socialFields i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+ .socialFields a {
+    text-decoration: none;
+    color: white;
+}
+
+/*.socialFields .socialFieldTwitter {
+    background: #00acee;
+}
+*/
+/*.socialFields .socialFieldFacebook {
+    background:  #1e3c72;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+*/
+
+/*.socialFields .socialFieldFacebook i {
+    margin-right: 10px;
+}
+*/
+
