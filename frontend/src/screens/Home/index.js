@@ -1,9 +1,7 @@
 import React from 'react';
-import GlobalMenu from '../../components/GlobalMenu'
 import classes from './home.module.css'
 import { Link } from 'react-router-dom'
 import Logo from '../../img/exampleimg.jpg'
-import FilmGif from '../../img/filmes.gif'
 
 const Home = () => {
     return (

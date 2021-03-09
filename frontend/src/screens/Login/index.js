@@ -2,9 +2,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import classes from './login.module.css';
 import * as Yup from 'yup';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import api from '../../services/api';
-
 
 const Login = () => {
     const history = useHistory();
