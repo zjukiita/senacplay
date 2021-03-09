@@ -2,8 +2,13 @@ import React, { useEffect, useState } from 'react';
 import GlobalMenu from '../../components/GlobalMenu';
 import MovieCard from '../../components/MovieCard';
 import api from '../../services/api';
+<<<<<<< HEAD
 import classes from './filmslist.module.css'
 import imgLogo from '../../img/exampleImg.jpg'
+=======
+import classes from './styles.module.css'
+
+>>>>>>> 0b7220ae1cf40d023099aa4a1353e69dbaab6de8
 
 const FilmsList = () => {
     const [movies, setMovies] = useState([]);
