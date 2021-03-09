@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.Card {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  width: 33.33%;
+  float: left;
+  list-style: none;
+  margin-left: 0;
+  justify-content: center;
+}
+
+.word {
+  font-size: 2rem;
+}

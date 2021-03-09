@@ -17,29 +17,25 @@
   
   .main {
       background: #363636;
-      width: 50vw;
-      padding: 2rem;
+      width: 60vw;
+      padding: 2%;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
       border-radius: 8px;
   }
   
   .title {
-      font-weight: 600;
-      margin-bottom: 2rem;
-      position: relative;
+      text-align: center;
       color: #7600a9;
   }
   
   .fieldInput {
-      font-size: 1rem;
-      padding: 2px;
+      padding: 2%;
       width: 100%;
       outline: none;
   }
   
   .mainRegister {
       width: 100%;
-      padding: 15px 25px;
       margin: 8px 0;
       display: inline-block;
       border-radius: 4px;
@@ -120,8 +116,8 @@
   
   .leftArrow .backButton {
       position: absolute;
-      top: 50px;
-      left: 50px;
+      top: 5%;
+      left: 5%;
       color: #7600a9;
       border: solid #f7eeee;
       background-color: #f7eeee;
