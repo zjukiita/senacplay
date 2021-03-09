@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalMenu from '../../components/GlobalMenu'
-import classes from './styles.module.css'
+import classes from './home.module.css'
 import { Link } from 'react-router-dom'
 import Logo from '../../img/exampleImg.jpg'
 import FilmGif from '../../img/filmes.gif'
@@ -22,7 +22,7 @@ const Home = () => {
             <hr class="container-fluid divisor p-2 bg-secundary mt-0 mb-0" />
 
             <div class="container-fluid mt-0" className={classes.secondSection}>
-                <h4>Aproveite filmes em Full HD dublado em seu navegador!</h4>
+                <h4>Aproveite filmes em seu navegador!</h4>
                 <h5>Filmes de todos os tipos em alta qualidade e atualizados!</h5>
             </div>
 

@@ -1,0 +1,129 @@
+  @charset "utf-8";
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+  * {
+      font-family: "Poppins", sans-serif;
+      ;
+      box-sizing: border-box;
+  }
+  
+  .body {
+      margin: 0;
+      background-image: url(../../img/admission-2974645_1920.jpg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .main {
+      background: #363636;
+      width: 50vw;
+      padding: 2rem;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+  }
+  
+  .title {
+      font-weight: 600;
+      margin-bottom: 2rem;
+      position: relative;
+      color: #7600a9;
+  }
+  
+  .fieldInput {
+      font-size: 1rem;
+      padding: 2px;
+      width: 100%;
+      outline: none;
+  }
+  
+  .mainRegister {
+      width: 100%;
+      padding: 15px 25px;
+      margin: 8px 0;
+      display: inline-block;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #363636;
+  }
+  
+  .form input {
+      background-color: #363636;
+      border: 3px;
+      border-color: white;
+      color: white;
+  }
+  
+  .form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .input-field input::placeholder {
+      color: white;
+  }
+  
+  .form label {
+      color: white;
+  }
+  
+  .form .inputSubmit {
+      margin-top: 0.1rem;
+      padding: 0.4rem;
+      background: #7600a9;
+      cursor: pointer;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 300;
+      border-radius: 4px;
+      text-align: center;
+  }
+  
+  .footer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+  }
+  
+  .name label,
+  .email label,
+  .user label,
+  .password label {
+      color: white;
+  }
+  
+  .button[type=submit] {
+      margin-top: 0.1rem;
+      padding: 0.4rem;
+      background: #7600a9;
+      cursor: pointer;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 300;
+      border-radius: 4px;
+      text-align: center;
+  }
+  
+  .button a {
+      text-decoration: none;
+      color: white;
+      text-align: left;
+  }
+  
+  .button[type=submit]:hover {
+      background-color: #8f00cc;
+  }
+  
+  .error {
+      color: #dc3545;
+  }
+  
+  .leftArrow .backButton {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      color: #7600a9;
+      border: solid #f7eeee;
+      background-color: #f7eeee;
+      border-radius: 50%;
+  }

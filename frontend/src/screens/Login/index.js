@@ -1,13 +1,13 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import classes from './login.module.css';
-import GlobalMenu from '../../components/GlobalMenu';
 import * as Yup from 'yup';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 
 
 const Login = () => {
+    const history = useHistory();
     const validate = (values) => {
         const errors = {};
         if (!values.name) {
@@ -36,10 +36,9 @@ const Login = () => {
                 };
                 const response = await api.post('/login', login);
                 if (response.data) {
-                    alert(`Login efetuado com sucesso`)
+                    history.push('/filmslist')
                 }
 
-                
             } catch (error) {
                 alert(`Ocorreu uma falha durante o Login. Tente novamente! ${error}`);
             }
