@@ -56,6 +56,15 @@ router.put('/:id', async (req, res) => {
     res.status(200).json(filme);
 });
 
+router.delete('/:id', async (req,res) => {
+    const filmes = await Filme.destroy(req.body, {
+        where: {
+            id: req.params.id
+        }
+    });
+     res.status(200).json(filmes)
+});
+
 module.exports = router
 
 
