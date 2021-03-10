@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './home.module.css'
 import { Link } from 'react-router-dom'
-import Logo from '../../img/exampleImg.jpg'
+import Logo from '../../img/logo.jpg'
 
 const Home = () => {
     return (
@@ -65,6 +65,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
             </body>
         </>
     );
