@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MovieCard from '../../components/MovieCard';
 import api from '../../services/api';
 import classes from './filmslist.module.css'
-import imgLogo from '../../img/exampleimg.jpg'
+import imgLogo from '../../img/exampleImg.jpg'
 
 const FilmsList = () => {
     const [movies, setMovies] = useState([]);
