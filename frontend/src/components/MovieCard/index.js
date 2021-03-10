@@ -4,8 +4,8 @@ import classes from './moviecard.module.css';
 const MovieCard = (props) => {
     return (
         <div className={classes.Card}>
-            <img src={props.movie.imagem} width="360" height="530" alt={props.movie.nome} />
-            <div className={classes.words}>
+            <img src={props.movie.imagem} width="360" height="530" /* alt={props.movie.nome} */ />
+            <div class="container-fluid" className={classes.words}>
                 <h2>{props.movie.nome}</h2>
                 <p><label>Ano: </label> {props.movie.anoDeLancamento}</p>
                 <p><label>Categoria: </label>{props.movie.categoria}</p>
