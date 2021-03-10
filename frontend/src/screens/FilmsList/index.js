@@ -8,16 +8,23 @@ const FilmsList = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState('');
 
+    /* const listaDeFilmes = async () => {
+        const listagem = await api.get(`/filmes`);
+        setMovies([]);
+        if (listagem.data)
+            setMovies(listagem.data);
+    } */
+
     const loadingMovies = async () => {
-        const response = await api.get(`/filmes`); //Chave de busca da API
+        const response = await api.get(`/filmes/nome/${search}`); //Chave de busca da API
         setMovies([]);
         if (response.data)
             setMovies(response.data);
-    }
+    };
 
     useEffect(() => {
         loadingMovies();
-    }, []);
+    }, [search]);
 
     return (
         <>
