@@ -10,8 +10,49 @@
   list-style: none;
   margin-left: 0;
   justify-content: center;
+  
 }
 
-.word {
-  font: 500px;
+/*.images {
+  width: 200px; 
+  height: 280px;
+  transition: width 2s, height 2s;;
+}*/
+
+/*.images:hover {
+  width: 350px;
+  height: 420px;
+}*/
+
+/*h3, p {
+  font-size: 1rem;
+  color: black;
+  transition: 2s;
+}
+
+h3:hover, p:hover {
+  font-size: 1.2rem;
+  color: white;
+}*/
+
+.transition {
+  font-size: 0rem;
+  color: black;
+  transition: 2s;
+}
+
+.transition img {
+  width: 200px; 
+  height: 280px;
+  transition: width 2s, height 2s;;
+}
+
+.transition:hover {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.transition img:hover {
+  width: 350px;
+  height: 420px;
 }

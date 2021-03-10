@@ -6,12 +6,39 @@
 }
 
 .listNavBar { 
+    background-image: url(../../img/cinema-4213751_1280.jpg);
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    margin-top: 0;
+    padding-top: 3%;
+    margin-bottom:  0;
+    padding-bottom: 30%;
 }
 
-.list {
-    margin-top: 5%;
-    padding-top: 5%;
+/*.list {
+    margin-top: 15%;
+    padding-top: 15%;
+}*/
+
+.searchTab {
+    margin-right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.search {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: black;
 }

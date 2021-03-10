@@ -55,8 +55,12 @@
     color: white;
 }
 
-.form label {
+.formTitle {
     color: white;
+}
+
+.error {
+    color: #dc3545;
 }
 
 .form .inputSubmit {
@@ -76,3 +80,37 @@
     flex-direction: column;
     margin-top: 1rem;
 }
+
+.leftArrow .backButton {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    color: #7600a9;
+    border: solid #f7eeee;
+    background-color: #f7eeee;
+    border-radius: 50%;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #363636 inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #575757;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: #575757;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #575757;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #575757;  
+ }

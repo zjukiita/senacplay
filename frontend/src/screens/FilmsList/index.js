@@ -8,31 +8,36 @@ const FilmsList = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState('');
 
-    /* const listaDeFilmes = async () => {
+    const listaDeFilmes = async () => {
         const listagem = await api.get(`/filmes`);
         setMovies([]);
         if (listagem.data)
             setMovies(listagem.data);
-    } */
+    }
 
-    const loadingMovies = async () => {
+    /* const loadingMovies = async () => {
         const response = await api.get(`/filmes/nome/${search}`); //Chave de busca da API
         setMovies([]);
         if (response.data)
             setMovies(response.data);
-    };
+    }; */
 
     useEffect(() => {
-        loadingMovies();
+        /* loadingMovies(); */
+        listaDeFilmes();
     }, [search]);
 
     return (
         <>
             <div className={classes.body}>
-                <div className={classes.listNavBar} style={{ paddingInline: 20 }}>
+                <div className={classes.listNavBar} style={{ paddingInline: 35 }}>
                     <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
                     <div>
+                        <button className={classes.searchTab}>
+                            <i class="fas fa-search"></i>
+                        </button>
                         <input
+                            className={classes.search}
                             id="search"
                             name="search"
                             type="text"

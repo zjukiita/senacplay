@@ -2,8 +2,9 @@ import React from 'react';
 import { useFormik } from 'formik';
 import classes from './login.module.css';
 import * as Yup from 'yup';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import api from '../../services/api';
+
 
 const Login = () => {
     const history = useHistory();
@@ -48,53 +49,56 @@ const Login = () => {
         <>
 
             <body className={classes.body}>
-            <main className={classes.main}>
-                <h2 className={classes.h2}>Login</h2>
-                <form className={classes.form}onSubmit={formik.handleSubmit}>
+                <nav className={classes.leftArrow}>
+                    <Link to="/" className={classes.backButton}><i class="fas fa-arrow-circle-left fa-3x"></i></Link>
+                </nav>
+                <main className={classes.main}>
+                    <h2 className={classes.h2}>Login</h2>
+                    <form className={classes.form} onSubmit={formik.handleSubmit}>
 
-                    <div>
+                        <div>
 
-                        <label htmlFor="email">Email: </label>
-                        <br />
-                        <input
-                            className={classes.fieldInput}
-                            id="email"
-                            name="email"
-                            type="text"
-                            placeholder="Insira seu email"
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.email}
-                        />
-                        {formik.touched.email && formik.errors.email ? <label htmlFor="email">{formik.errors.email}</label> : null}
-                        <div className={classes.underline}></div>
-                        <br />
-                    </div>
+                            <label htmlFor="email" className={classes.formTitle}>Email: </label>
+                            <br />
+                            <input
+                                className={classes.fieldInput}
+                                id="email"
+                                name="email"
+                                type="text"
+                                placeholder="Insira seu email"
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.email}
+                            />
+                            {formik.touched.email && formik.errors.email ? <label htmlFor="email" className={classes.error}>{formik.errors.email}</label> : null}
+                            <div className={classes.underline}></div>
+                            <br />
+                        </div>
 
-                    <div>
-                        <label htmlFor="senha">Senha: </label>
-                        <br />
-                        <input
-                            className={classes.fieldInput}
-                            id="senha"
-                            name="senha"
-                            type="password"
-                            placeholder="Insira sua senha"
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.senha}
-                        />
-                        {formik.touched.senha && formik.errors.senha ? <label htmlFor="senha">{formik.errors.senha}</label> : null}
-                        <div className={classes.underline} id="underline"></div>
-                        <br />
-                    </div>
-                    <input type="submit" className={classes.inputSubmit} value="Continue"></input>
-                </form>
+                        <div>
+                            <label htmlFor="senha" className={classes.formTitle}>Senha: </label>
+                            <br />
+                            <input
+                                className={classes.fieldInput}
+                                id="senha"
+                                name="senha"
+                                type="password"
+                                placeholder="Insira sua senha"
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.senha}
+                            />
+                            {formik.touched.senha && formik.errors.senha ? <label htmlFor="senha" className={classes.error}>{formik.errors.senha}</label> : null}
+                            <div className={classes.underline} id="underline"></div>
+                            <br />
+                        </div>
+                        <input type="submit" className={classes.inputSubmit} value="Continue"></input>
+                    </form>
 
-               
 
-            </main>
-     </body>
+
+                </main>
+            </body>
 
         </>
 

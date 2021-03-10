@@ -59,7 +59,7 @@
       background-color: #363636;
   }
 
-  .form label {
+  .formTitle {
       color: white;
   }
   
@@ -81,13 +81,7 @@
       margin-top: 1rem;
   }
   
-  .name label,
-  .email label,
-  .user label,
-  .password label {
-      color: white;
-  }
-  
+ 
   .button[type=submit] {
       margin-top: 0.5rem;
       background: #7600a9;
@@ -122,3 +116,11 @@
       background-color: #f7eeee;
       border-radius: 50%;
   }
+
+  input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #363636 inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+}

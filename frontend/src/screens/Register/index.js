@@ -57,13 +57,13 @@ const Register = () => {
 
                         <div className={classes.name}>
 
-                            <label htmlFor="name">Nome completo: </label>
+                            <label htmlFor="name" className={classes.formTitle}>Nome completo: </label>
                             <input
                                 className={classes.fieldInput}
                                 id="name"
                                 name="name"
                                 type="text"
-                                placeholder="Nome"
+                                placeholder="Insira seu nome"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.name}
@@ -74,13 +74,13 @@ const Register = () => {
 
                         <div className={classes.email}>
 
-                            <label htmlFor="email">E-mail: </label>
+                            <label htmlFor="email" className={classes.formTitle}>E-mail: </label>
                             <input
                                 className={classes.fieldInput}
                                 id="email"
                                 name="email"
                                 type="text"
-                                placeholder="Email"
+                                placeholder="Insira seu Email"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.email}
@@ -91,13 +91,13 @@ const Register = () => {
 
                         <div className={classes.user}>
 
-                            <label htmlFor="user">Usuário: </label>
+                            <label htmlFor="user" className={classes.formTitle}>Usuário: </label>
                             <input
                                 className={classes.fieldInput}
                                 id="user"
                                 name="user"
                                 type="text"
-                                placeholder="Usuário"
+                                placeholder="Insira um nome de usuário"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.user}
@@ -107,13 +107,13 @@ const Register = () => {
                         </div>
 
                         <div className={classes.password}>
-                            <label htmlFor="password">Senha: </label>
+                            <label htmlFor="password" className={classes.formTitle}>Senha: </label>
                             <input
                                 className={classes.fieldInput}
                                 id="password"
                                 name="password"
                                 type="password"
-                                placeholder="Sua senha deve conter 8 caracteres sendo eles números, letra maiúscula, minúscula e 1 caracter especial"
+                                placeholder="Sua senha precisa conter 8 letras, caracteres especiais e números"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 value={formik.values.password}
