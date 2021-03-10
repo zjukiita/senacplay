@@ -31,17 +31,6 @@ router.get('/nome/:nome', async (req, res) => {
 });
 
 
-router.get('/categoria/:categoria', async (req,res) => {
-    const filmes = await Filme.findAll({
-        where: {
-            nome: {
-                [Op.like]: `${req.params.categoria}%`
-            }
-        }
-
-    });
-    res.status(200).json(filmes);
-});
 
 router.post('/', async (req, res) => {
     const filmes = await Filme.create(req.body)
@@ -58,3 +47,5 @@ router.put('/:id', async (req, res) => {
 });
 
 module.exports = router
+
+
