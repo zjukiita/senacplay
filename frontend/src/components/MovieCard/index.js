@@ -7,7 +7,7 @@ const MovieCard = (props) => {
         <>
             <div className={classes.Card}>
                 <div className={classes.transition}>
-                    <img src={props.movie.imagem} className={classes.images} /* width="200" height="280" */ alt={props.movie.nome} />
+                    <img class="mt-5" src={props.movie.imagem} className={classes.images} alt={props.movie.nome} />
                     <div className={classes.words}>
                         <h3>{props.movie.nome}</h3>
                         <p><label>Ano: </label> {props.movie.anoDeLancamento}</p>

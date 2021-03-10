@@ -12,25 +12,25 @@
   justify-content: center;
 }
 
-.transition {
-  font-size: 0;
-  color: black;
-  transition: 2s;
-  display: list-item;
-}
-
 .transition img {
-  width: 200px; 
-  height: 280px;
+  width: 50%; 
+  height: 50%;
+  opacity: 80%;
   transition: width 2s, height 2s;;
 }
 
-.transition:hover, .transition img:hover {
-  font-size: 1.2rem;
-  color: white;
+.transition img:hover {
+  width: 80%;
+  height: 80%;
+  opacity: 100%;
 }
 
-.transition img:hover {
-  width: 350px;
-  height: 420px;
+.words {
+  display: none;
+}
+
+.transition:hover .words {
+  color: white;
+  font-size: 1rem;
+  display: block;
 }
