@@ -29,13 +29,12 @@ const FilmsList = () => {
 
     return (
         <>
-            <div className={classes.body}>
+            <nav className={classes.navBarSearch}>
                 <div className={classes.listNavBar} style={{ paddingInline: 35 }}>
                     <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
                     <div>
                         <button className={classes.searchTab}>
                             <i class="fas fa-search"></i>
-                        </button>
                         <input
                             className={classes.search}
                             id="search"
@@ -45,7 +44,9 @@ const FilmsList = () => {
                             value={search}
                             onChange={(e) => { setSearch(e.target.value) }}
                         />
+                        </button>
                     </div>
+
                     <div className={classes.bars}>
                         <i class="fas fa-bars fa-3x"></i>
                     </div>
@@ -60,7 +61,7 @@ const FilmsList = () => {
                         );
                     })}
                 </div>
-            </div>
+            </nav>
         </>
     );
 }

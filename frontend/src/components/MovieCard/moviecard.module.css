@@ -16,6 +16,7 @@
   font-size: 0;
   color: black;
   transition: 2s;
+  display: list-item;
 }
 
 .transition img {

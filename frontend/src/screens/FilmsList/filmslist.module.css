@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.body {
+.navBarSearch {
     background-color: black;
     color: white;
 }
@@ -20,11 +20,13 @@
     margin-right: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0);
+    border: 0;
 }
 
 .search {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0);
+    border: 0;
 
 }
 

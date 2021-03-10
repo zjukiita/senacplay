@@ -91,6 +91,7 @@
       font-weight: 300;
       border-radius: 4px;
       text-align: center;
+      border: 0;
   }
   
   .button a {
@@ -117,10 +118,10 @@
       border-radius: 50%;
   }
 
-  input:-webkit-autofill {
-    box-shadow: 0 0 0 30px #363636 inset;
+    input:-webkit-autofill {
+      box-shadow: 0 0 0 30px #363636 inset;
 }
 
-input:-webkit-autofill {
-    -webkit-text-fill-color: #fff;
+    input:-webkit-autofill {
+      -webkit-text-fill-color: #fff;
 }
