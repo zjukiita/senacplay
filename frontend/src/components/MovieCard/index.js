@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import classes from './moviecard.module.css';
+import { Link } from 'react-router-dom'
 
 const MovieCard = (props) => {
     const [modalShow, setModalShow] = useState(false);
@@ -22,21 +23,23 @@ const MovieCard = (props) => {
                     aria-labelledby="contained-modal-title-vcenter"
                     centered
                 >
-                    <Modal.Header closeButton>
+                    <Modal.Header /* closeButton */>
                         <Modal.Title id="contained-modal-title-vcenter">
-                            Modal heading
+                            {props.movie.nome}
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>Centered Modal</h4>
-                        <p>
-                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                            consectetur ac, vestibulum at eros.
-                        </p>
+                        <h4><strong>Ano de lançamento:</strong> {props.movie.anoDeLancamento}</h4>
+                        <p><strong>Sinopse:</strong> {props.movie.sinopse}</p>
+                        <small><strong>Duração:</strong> {props.movie.duracao}</small>
+                        <p class="mt-2"><strong>Avaliação:</strong> {props.movie.avaliacao}</p>
+                        <p><strong>Categoria:</strong> {props.movie.categoria}</p>
+                        <p><strong>Classificação:</strong> {props.movie.classificacao}</p>
                     </Modal.Body>
-                    <Modal.Footer>
-                        <Button onClick={() => setModalShow(false)}>Close</Button>
+                    <Modal.Footer className={classes.modal_footer}>
+                        <Link to={`/watch/${props.movie.id}`}><Button className={classes.Button}>Assistir</Button></Link>
+                        <Button className={classes.Button} onClick={() => setModalShow(false)}>Fechar</Button>
+
                     </Modal.Footer>
                 </Modal>
 
