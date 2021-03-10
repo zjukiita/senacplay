@@ -56,8 +56,9 @@
   
   .input-field input::placeholder {
       color: #363636;
+      background-color: #363636;
   }
-  
+
   .form label {
       color: white;
   }
