@@ -1,3 +1,17 @@
 @charset "utf-8";
 
+.body {
+    background-color: black;
+    color: white;
+}
 
+.listNavBar { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    margin-top: 5%;
+    padding-top: 5%;
+}

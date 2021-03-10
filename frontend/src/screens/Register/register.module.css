@@ -2,7 +2,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
   * {
       font-family: "Poppins", sans-serif;
-      ;
       box-sizing: border-box;
   }
   
@@ -21,6 +20,7 @@
       padding: 2%;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
       border-radius: 8px;
+      line-height: 2.8rem;
   }
   
   .title {
@@ -29,7 +29,6 @@
   }
   
   .fieldInput {
-      padding: 2%;
       width: 100%;
       outline: none;
   }
@@ -56,7 +55,7 @@
   }
   
   .input-field input::placeholder {
-      color: white;
+      color: #363636;
   }
   
   .form label {
@@ -89,12 +88,11 @@
   }
   
   .button[type=submit] {
-      margin-top: 0.1rem;
-      padding: 0.4rem;
+      margin-top: 0.5rem;
       background: #7600a9;
       cursor: pointer;
       color: white;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 300;
       border-radius: 4px;
       text-align: center;
@@ -116,8 +114,8 @@
   
   .leftArrow .backButton {
       position: absolute;
-      top: 5%;
-      left: 5%;
+      top: 4%;
+      left: 4%;
       color: #7600a9;
       border: solid #f7eeee;
       background-color: #f7eeee;

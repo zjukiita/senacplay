@@ -9,16 +9,7 @@
     height: 100vh;
 }
 
-.imgLogo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
 .loginButton {
-    position: absolute;
-    top: 50px;
-    right: 50px;
     font-size: 18px;
     background-color: #8f00cc;
     border-radius: 4px;
@@ -26,6 +17,20 @@
     padding: 8px 15px;
     color: white;
 
+}
+
+.homeNavBar {
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .loginButton:hover {
