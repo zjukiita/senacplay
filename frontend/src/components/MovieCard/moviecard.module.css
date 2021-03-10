@@ -5,38 +5,15 @@
   box-sizing: border-box;
   background-color: black;
   color: white;
-  width: 33.33%;
+  width: 25%;
   float: left;
   list-style: none;
   margin-left: 0;
   justify-content: center;
-  
 }
-
-/*.images {
-  width: 200px; 
-  height: 280px;
-  transition: width 2s, height 2s;;
-}*/
-
-/*.images:hover {
-  width: 350px;
-  height: 420px;
-}*/
-
-/*h3, p {
-  font-size: 1rem;
-  color: black;
-  transition: 2s;
-}
-
-h3:hover, p:hover {
-  font-size: 1.2rem;
-  color: white;
-}*/
 
 .transition {
-  font-size: 0rem;
+  font-size: 0;
   color: black;
   transition: 2s;
 }
@@ -47,7 +24,7 @@ h3:hover, p:hover {
   transition: width 2s, height 2s;;
 }
 
-.transition:hover {
+.transition:hover, .transition img:hover {
   font-size: 1.2rem;
   color: white;
 }
