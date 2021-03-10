@@ -39,3 +39,8 @@ input:-webkit-autofill {
 input:-webkit-autofill {
     -webkit-text-fill-color: black;
 }
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}

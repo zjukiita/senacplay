@@ -8,23 +8,19 @@ const FilmsList = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState('');
 
-    const listaDeFilmes = async () => {
-        const listagem = await api.get(`/filmes`);
-        setMovies([]);
-        if (listagem.data)
-            setMovies(listagem.data);
-    }
-
-    /* const loadingMovies = async () => {
-        const response = await api.get(`/filmes/nome/${search}`); //Chave de busca da API
+    const loadingMovies = async () => {
+        let response;
+        if (search === '')
+            response = await api.get(`/filmes`);
+        else
+            response = await api.get(`/filmes/nome/${search}`); //Chave de busca da API
         setMovies([]);
         if (response.data)
             setMovies(response.data);
-    }; */
+    };
 
     useEffect(() => {
-        /* loadingMovies(); */
-        listaDeFilmes();
+        loadingMovies();
     }, [search]);
 
     return (
@@ -35,20 +31,20 @@ const FilmsList = () => {
                     <div>
                         <button className={classes.searchTab}>
                             <i class="fas fa-search"></i>
-                        <input
-                            className={classes.search}
-                            id="search"
-                            name="search"
-                            type="text"
-                            placeholder="Pesquisa"
-                            value={search}
-                            onChange={(e) => { setSearch(e.target.value) }}
-                        />
+                            <input
+                                className={classes.search}
+                                id="search"
+                                name="search"
+                                type="text"
+                                placeholder="Pesquisa"
+                                value={search}
+                                onChange={(e) => { setSearch(e.target.value) }}
+                            />
                         </button>
                     </div>
 
                     <div className={classes.bars}>
-                        <i class="fas fa-bars fa-3x"></i>
+                        <i class="fas fa-bars fa-2x"></i>
                     </div>
                 </div>
                 <div className={classes.list}>
