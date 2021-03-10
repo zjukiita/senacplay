@@ -1,23 +1,17 @@
 import React from 'react';
 import classes from './home.module.css'
 import { Link } from 'react-router-dom'
-import Logo from '../../img/exampleImg.jpg'
+import Logo from '../../img/exampleimg.jpg'
 
 const Home = () => {
     return (
         <>
             <body className={classes.body}>
 
-
-                <div className={classes.initialSection}>
-                    <h4 class="mt-5">Tá afim de assistir um filme de ação? ou quem sabe um filme clássico? até mesmo uma comédia?</h4>
-                    <h5>Crie sua conta no Senac Retrô e assista filmes de graça!</h5>
-                    <Link to="/register"><button type="button" className={classes.registerButton}>Criar conta</button></Link>
-=======
                 <div className={classes.principalPage}>
                     <nav className={classes.homeNavBar} style={{ paddingInline: 25 }}  >
-                            <img className={classes.imgLogo} src={Logo} width="50" height="50" />
-                            <Link to="/login"><button type="button" class className={classes.loginButton}>Entrar</button></Link>
+                        <img className={classes.imgLogo} src={Logo} width="50" height="50" />
+                        <Link to="/login"><button type="button" class className={classes.loginButton}>Entrar</button></Link>
                     </nav>
 
                     <div className={classes.initialSection}>
@@ -70,6 +64,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
             </body>
         </>
     );
