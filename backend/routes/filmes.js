@@ -62,7 +62,7 @@ router.delete('/:id', async (req,res) => {
             id: req.params.id
         }
     });
-     res.status(200).json(filmes)
+     res.status(200).json(filme)
 });
 
 module.exports = router
