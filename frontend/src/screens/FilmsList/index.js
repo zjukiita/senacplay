@@ -27,7 +27,7 @@ const FilmsList = () => {
         <>
             <nav className={classes.navBarSearch}>
                 <div className={classes.listNavBar}>
-                    <div className={classes.items}  style={{paddingInline: 35}}>
+                    <div className={classes.items} style={{ paddingInline: 35 }}>
                         <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
                         <div>
                             <button className={classes.searchTab}>
@@ -43,8 +43,16 @@ const FilmsList = () => {
                                 />
                             </button>
                         </div>
+
                         <div className={classes.bars}>
-                            <i class="fas fa-bars fa-2x"></i>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                Categorias
+                            </button>
+                            <div class="dropdown-menu bg-secondary">
+                                <a class="dropdown-item text-dark" href="#">Ação</a>
+                                <a class="dropdown-item text-dark" href="#">Aventura</a>
+                                <a class="dropdown-item text-dark" href="#">Comédia</a>
+                            </div>
                         </div>
                     </div>
 
