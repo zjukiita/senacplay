@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 import Movie from '../../components/WatchMovie';
 import api from '../../services/api'
 import classes from './watch.module.css'
