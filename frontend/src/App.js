@@ -34,7 +34,7 @@ export class App extends React.Component {
           <Route path="/register" component={Register} />
           <Route path="/filmsList" component={FilmsList} />
           <Route path="/login" component={Login} />
-          <Route path='/watch' component={Watch} />
+          {/* <Route path='/watch' component={Watch} /> */}
         </Switch>
       </BrowserRouter>
       );
