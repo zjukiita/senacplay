@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
 
 .body {
     background: url(../../img/cinema-4213751_1920.jpg);
@@ -20,7 +13,6 @@
     text-align: center;
     color: #7600a9;
     margin-top: 20px;
-    max-width: 500px;
 }
 
 .conteudo {
@@ -38,3 +30,4 @@
 .palavras {
     color: #7600a9
 }
+

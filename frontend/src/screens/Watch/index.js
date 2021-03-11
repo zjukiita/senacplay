@@ -6,14 +6,14 @@ const Watch = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState('');
     const loadingMovies = async () => {
-        const response = await api.get(`/filmes`); //Chave de busca da API
+        const response = await api.get(`/filmes/${search}`); //Chave de busca da API
         setMovies([]);
         if (response.data)
             setMovies(response.data);
     }
     useEffect(() => {
         loadingMovies();
-    }, []);
+    }, [search]);
     return (
         <>
             {movies.map(m => {

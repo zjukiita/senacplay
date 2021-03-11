@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classes from './watch.modules.css'
+import classes from './filme.module.css';
 
 
 const Movie = (props) => {
