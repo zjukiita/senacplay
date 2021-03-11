@@ -11,13 +11,13 @@ const Home = () => {
                 <div className={classes.principalPage}>
 
                     <nav className={classes.homeNavBar} style={{ paddingInline: 25 }}  >
-                        <img className={classes.imgLogo} src={Logo} width="50" height="50" />
+                        <img className={classes.imgLogo} src={Logo} width="100" height="100" />
                         <Link to="/login"><button type="button" class className={classes.loginButton}>Entrar</button></Link>
                     </nav>
 
                     <div className={classes.initialSection}>
                         <h4 class="mt-5">Tá afim de assistir um filme de ação? ou quem sabe um filme clássico? até mesmo uma comédia?</h4>
-                        <h5>Crie sua conta no Senac Play e assista filmes de graça!</h5>
+                        <h5>Crie sua conta no Senac Retrô e assista filmes de graça!</h5>
                         <Link to="/register"><button type="button" className={classes.registerButton}>Criar conta</button></Link>
                     </div>
 

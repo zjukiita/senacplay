@@ -33,8 +33,8 @@ router.get('/nome/:nome', async (req, res) => {
 router.get('/categoria/:categoria', async (req,res) => {
     const filmes = await Filme.findAll({
         where: {
-            nome: {
-                [Op.like]: `${req.params.categoria}%`
+            categoria: {
+                [Op.or]: `${req.params.categoria}%`
             }
         }
 
