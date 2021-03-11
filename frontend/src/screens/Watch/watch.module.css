@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.search {
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    text-align: center;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+.input {
+    border-radius: 4px;
+    background-color: #363636;
+    color: white;
+}
+
+.input::placeholder {
+    color: white;
+}

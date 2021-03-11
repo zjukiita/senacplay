@@ -4,8 +4,8 @@
 .body {
     background: url(../../img/cinema-4213751_1920.jpg);
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 98vh;
+    min-width: 98vw;
 
 }
 
@@ -13,6 +13,10 @@
     text-align: center;
     color: #7600a9;
     margin-top: 20px;
+}
+
+.main_content {
+    margin: 12%;
 }
 
 .conteudo {
@@ -28,6 +32,24 @@
 }
 
 .palavras {
+    margin-top: 1rem;
     color: #7600a9
 }
 
+hr {
+    background-color: #7600a9;
+}
+
+.button {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #8f00cc;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase!important;
+}

@@ -37,7 +37,7 @@ const MovieCard = (props) => {
                         <p><strong>Classificação:</strong> {props.movie.classificacao}</p>
                     </Modal.Body>
                     <Modal.Footer className={classes.modal_footer}>
-                        <Link to={`/watch/${props.movie.id}`}><Button className={classes.Button}>Assistir</Button></Link>
+                        <a href={`/watch#${props.movie.id}`} ><Button className={classes.Button}>Assistir</Button></a>
                         <Button className={classes.Button} onClick={() => setModalShow(false)}>Fechar</Button>
 
                     </Modal.Footer>
