@@ -26,26 +26,30 @@ const FilmsList = () => {
     return (
         <>
             <nav className={classes.navBarSearch}>
-                <div className={classes.listNavBar} style={{ paddingInline: 35 }}>
-                    <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
-                    <div>
-                        <button className={classes.searchTab}>
-                            <i class="fas fa-search"></i>
-                            <input
-                                className={classes.search}
-                                id="search"
-                                name="search"
-                                type="text"
-                                placeholder="Pesquisa"
-                                value={search}
-                                onChange={(e) => { setSearch(e.target.value) }}
-                            />
-                        </button>
+                <div className={classes.listNavBar}>
+                    <div className={classes.items}  style={{paddingInline: 35}}>
+                        <img className={classes.imgLogo} src={imgLogo} width="50" height="50" />
+                        <div>
+                            <button className={classes.searchTab}>
+                                <i class="fas fa-search"></i>
+                                <input
+                                    className={classes.search}
+                                    id="search"
+                                    name="search"
+                                    type="text"
+                                    placeholder="Pesquisa"
+                                    value={search}
+                                    onChange={(e) => { setSearch(e.target.value) }}
+                                />
+                            </button>
+                        </div>
+                        <div className={classes.bars}>
+                            <i class="fas fa-bars fa-2x"></i>
+                        </div>
                     </div>
 
-                    <div className={classes.bars}>
-                        <i class="fas fa-bars fa-2x"></i>
-                    </div>
+                    <h2>Seja muito bem-vindo(a)! Pegue uma pipoca e aproveite nossa lista de filmes! </h2>
+
                 </div>
                 <div className={classes.list}>
                     {movies.map(m => {

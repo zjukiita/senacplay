@@ -6,15 +6,25 @@
 }
 
 .listNavBar { 
-    background-image: url(../../img/cinema-4213751_1280.jpg);
+    background-image: url(../../img/cinema-4213751_1920.jpg);
+    padding: 15%;
+    text-align: center;
+}
+
+.items {
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    margin-top: 0;
-    padding-top: 3%;
-    margin-bottom:  0;
-    padding-bottom: 30%;
 }
+
 
 .searchTab {
     margin-right: 10px;

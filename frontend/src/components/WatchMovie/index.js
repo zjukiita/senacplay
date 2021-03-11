@@ -1,22 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import classes from './watch.modules.css'
 
 
 const Movie = (props) => {
     return (
         <>
-            <div>
-                <div>
-                    <h3>{props.movie.nome}</h3>
-                    <p><label>Ano: </label> {props.movie.anoDeLancamento}</p>
-                    <p><label>Categoria: </label> {props.movie.categoria}</p>
-                    <p><label>Duração: </label> {props.movie.duracao}</p>
-                    <p><label>Avaliação: </label> {props.movie.avaliacao}</p>
-                    <p><label>Trailer: </label> {props.movie.trailer}</p>
+            <body className={classes.body}>
+                <br />
+                <h1 className={classes.titulo}>{props.movie.nome}</h1>
+                <div className={classes.conteudo}>
+                    <h6 className={classes.palavras}>Ano: {props.movie.anoDeLancamento}</h6>
+                    <h6 className={classes.palavras}>Duração: {props.movie.duracao}</h6>
+                    <h6 className={classes.palavras}>Avaliação: {props.movie.avaliacao}</h6>
                 </div>
-            </div>
+            </body>
         </>
     )
+
 }
 
 export default Movie;

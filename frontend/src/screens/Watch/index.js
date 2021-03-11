@@ -6,7 +6,7 @@ const Watch = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState('');
     const loadingMovies = async () => {
-        const response = await api.get(`/filmes/1`); //Chave de busca da API
+        const response = await api.get(`/filmes`); //Chave de busca da API
         setMovies([]);
         if (response.data)
             setMovies(response.data);
