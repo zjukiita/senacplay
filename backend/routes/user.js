@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
         email: req.body.email,
         senha: sha256(req.body.senha + "767")
     });
-    res.status(201).json(users);
+    res.json(users);
 });
 
 module.exports = router
