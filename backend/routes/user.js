@@ -18,7 +18,8 @@ router.post('/', async (req, res) => {
         usuario: req.body.usuario,
         nomeCompleto: req.body.nomeCompleto,
         email: req.body.email,
-        senha: sha256(req.body.senha + "767")
+        senha: sha256(req.body.senha + "767"),
+        permissao: 'user'
     });
     res.json(users);
 });
